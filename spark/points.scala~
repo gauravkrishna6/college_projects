@@ -1,0 +1,30 @@
+val rdd =sc.parallelize(1 to 100)
+
+def getValues(num:Int):String={
+val z=num;
+val y=num;
+val x=((10-(z*z*y*y)/(z+Math.sin(y)))).toFloat;
+
+val result="x = "+x+" y = "+y+" z = "+z;
+return result;
+}
+
+
+val newRdd=rdd.map(num=>getValues(num))
+//newRdd.collect()
+newRdd.foreach(strn=>println(strn));
+
+/*
+var a = 1;
+for( a <- 1 to 100){
+	val r = scala.util.Random;
+	val s = scala.util.Random;
+	val z = (r.nextDouble * 50)+1;
+	val y = (r.nextDouble * 50)+1;
+	val x=(10-(z*z*y*y)/(z+Math.sin(y)));
+	print("x ="+x+ " ");
+	print("y ="+y + " ");
+	print("z ="+z + " ");
+	print("\n");
+
+}*/

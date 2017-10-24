@@ -1,0 +1,6 @@
+spark-shell
+:load /home/cslab36/Desktop/sparkProg/wordCount.scala
+:load /home/cslab36/Desktop/sparkProg/matrix.scala
+:load /home/cslab36/Desktop/sparkProg/stringCompare.scala
+:load /home/cslab36/Desktop/sparkProg/equation.scala
+:load /home/cslab36/Desktop/sparkProg/points.scala

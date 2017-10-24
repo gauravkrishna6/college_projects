@@ -1,0 +1,2 @@
+spark-shell
+:load /home/cslab36/Desktop/sparkProg/equation.scala
